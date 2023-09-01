@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    html{
+        background-color: #666666;
+    }
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+    .parrafo{
+        color:black;
+        line-height: 1.5em;
+    }
+    #part1{
+        text-align: center;
+        font-size: 16px;
+    }
+    h1{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-align: center;
+        margin-top: 0;
+        color: white;
+        font-size: 52px;
+    }
+    #part2{
+        text-align: left;
+        font-size: 17px;
+    }
+    #part3{
+        text-align: left;
+        font-size: 17px;
+    }
+    #part4{
+        text-align: left;
+        font-size: 17px;
+    }
+    #part5{
+        text-align: left;
+        font-size: 17px;
+    }
+    table.Datos thead, tfoot{
+        background-color: #ab82ff;
+        color: black;
+        border-radius: 20px;
+    }
+    table.Datos td{
+        align-content: center;
+        border: 5px solid #ab82ff;
+        border-collapse: collapse;
+        background-color: white;
+        width: 50%;
+    }
+    audio{
+        width: 135px;
+        height: 44px;
+    }
+    h2{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: left;
+    }
+    ul{
+        font-size: 17px;
+        color: black;
+    }
+    table.evolucion {
+    text-align: center;
+    margin: 1em auto;
+    border: 1px solid #e0e0e0;
+    font-size: smaller;
+    line-height: 1.4em;
+    background: #fff;
+    color: #000;
+}
+table.evolucion td.flecha {
+    background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNTAiIGhlaWdodD0iMjgiPjxwYXRoIHN0eWxlPSJmaWxsOiNkZGQiIGQ9Im0gMCw2LjUgMzMyLDAgMCwtNi41IDE4LDE0IC0xOCwxNCAwLC02LjUgLTMzMiwwIHoiIC8+PC9zdmc+) no-repeat right center;
+    color: #000;
+    height: 30px;
+    padding: 0 1.5em;
+    font-size: larger;
+    vertical-align: middle;
+}
+</style>
+<body>
+    <h1>Goomy</h1>
+    <center><img id="GoomyMove" src="https://images.wikidexcdn.net/mwuploads/wikidex/b/b1/latest/20200103031614/Goomy_EpEc.gif" width="300" height="400"></center>
+    <p id="part1" class="parrafo"><b>Goomy (ヌメラ "Numera" en japonés) es un pokemon tipo dragon introducido en los juegos "Pokemon X/Y"</b></p>
+    <center>
+    <table class="Datos">
+        <thead>
+            <tr>
+                <th colspan="2">Datos</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <td>Pronunciacion</td>
+            <td>/'gu.mi/</td>
+            </tr>
+            <tr>
+                <td>Generacion</td>
+                <td>Sexta <img src="https://images.wikidexcdn.net/mwuploads/wikidex/1/1a/latest/20220602220016/Sexta_generación.png"></td>
+            </tr>
+            <tr>
+                <td>Categoria</td>
+                <td>Molusco</td>
+            </tr>
+            <tr>
+                <td>Tipo</td>
+                <td><img src="https://images.wikidexcdn.net/mwuploads/wikidex/0/01/latest/20170114100154/Tipo_dragón.gif"></td>
+            </tr>
+            <tr>
+                <td>Habilidades</td>
+                <td>Herviboro Hidratacion</td>
+            </tr>
+            <tr>
+                <td>Hab. Oculta</td>
+                <td>Baba</td>
+            </tr>
+            <tr>
+                <td>Peso</td>
+                <td>2,8 Kg</td>
+            </tr>
+            <tr>
+                <td>Altura</td>
+                <td>0,3 m</td>
+            </tr>
+            <tr>
+                <td>Grupo Huevo</td>
+                <td>Dragon</td>
+            </tr>
+            <tr>
+                <td>Sexo</td>
+                <td><img src="https://images.wikidexcdn.net/mwuploads/wikidex/thumb/b/b2/latest/20220202165509/Macho.png/26px-Macho.png" height="16" width="16">50%<img src="https://images.wikidexcdn.net/mwuploads/wikidex/thumb/a/a0/latest/20220202165539/Hembra.png/26px-Hembra.png" height="16" width="16">50%</td>
+            </tr>
+            <tr>
+                <td>Color</td>
+                <td>Morado</td>
+            </tr>
+            <tr>
+                <td>Figura</td>
+                <td><img src="https://images.wikidexcdn.net/mwuploads/wikidex/thumb/1/18/latest/20200214140740/Figura_2.png/48px-Figura_2.png" width="26" height="26"></td>
+            </tr>
+            <tr>
+                <td>Huella</td>
+                <td>Desconocida</td>
+            </tr>
+            <tr>
+                <td>Grito</td>
+                <td>
+                <audio id="audio" controls="controls">
+                    <source src="https://images.wikidexcdn.net/mwuploads/wikidex/e/e9/latest/20131214064316/Grito_de_Goomy.ogg" type="audio/ogg">
+                </audio>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</center>
+    <h2>Etimologia</h2>
+    <ul>
+        <li>Su nombre proviene de las palabras inglesas goo (cosa muy pegajosa) y de gummy (pegajoso).</li>
+        <li>Su nombre japonés, Numera, procede de 滑る numeru (resbaladizo) y de ぬらぬら nuranura (baboso).</li>
+    </ul>
+    <h2>Biologia</h2>
+    <p id="part2" class="parrafo">Goomy esta basado tanto en una babosa como en el ceratosoma amoenum un molusco que habita en arrefices de coral.</p>
+    <p id="part3" class="parrafo">Goomy no se mueve con rapidez y no esta muy bien dotado para el combate, por lo que se considera el Pokemon de tipo dragon mas debil. No obstante, si se entrena bien, sacara a relucir una fuerza oculta que lo situara al nivel de cualquier otro Pokemon de tipo dragon.</p>
+    <p id="part4" class="parrafo">Este Pokemon esta cubierto de mucosidad viscosa que hace resbalar tanto los puñetazos como las patadas de los enemigos que lo golpean. Su cuerpo se compone casi exclusivaente de agua, por lo que se debilitaria si se deshidratase. Sus antenas son organos sensoriales muy desarrollados. Detecta a los enemigos con precision con ellas, lo que le permite poder esconderse antes que estos lo vean para sobrevivir.</p>
+    <h2>Evolucion</h2>
+    <p>Goomy evoluciona a:</p>
+    <ul>
+        <li>Sliggoo fuera de Hisui al nivel 40. Sliggoo evoluciona a Goodra al nivel 50 mientras que esta lloviendo o haya niebla. Goodra no evoluciona.</li>
+        <li>Sliggoo de Hisui en Hisui al nivel 40. El Sliggo de Hisui evoluciona a Goodra de Hisui al nivel 50 mientras esta lloviendo o haya niebla. El Goodra de Hisui no evoluciona.</li>
+    </ul>
+    <p id="part5" class="parrafo">La evolucion de ambas formas de Sliggo a Goodra solamente se produce si la lluvia esta presente de forma natural en el lugar donde se combate, por lo que Sliggo no evolucionara si la lluvia se debe a danza lluvia, llovizna, mar del albor o maxichorro.</p>
+    <table class="evolucion">
+
+        <tbody><tr>
+        <td rowspan="2" style="vertical-align:middle;"><a href="/wiki/Archivo:Goomy.png" class="image" title="Goomy"><img alt="Goomy" src="https://images.wikidexcdn.net/mwuploads/wikidex/thumb/0/05/latest/20190423175329/Goomy.png/95px-Goomy.png" decoding="async" width="95" height="88" srcset="https://images.wikidexcdn.net/mwuploads/wikidex/thumb/0/05/latest/20190423175329/Goomy.png/143px-Goomy.png 1.5x, https://images.wikidexcdn.net/mwuploads/wikidex/thumb/0/05/latest/20190423175329/Goomy.png/190px-Goomy.png 2x" /></a><br /><a title="Goomy">Goomy</a>
+        </td>
+        <td class="flecha">Nivel 40<br />(fuera de <a title="Hisui">Hisui</a>)
+        </td>
+        <td><a href="/wiki/Archivo:Sliggoo.png" class="image" title="Sliggoo"><img alt="Sliggoo" src="https://images.wikidexcdn.net/mwuploads/wikidex/thumb/d/d2/latest/20190423175607/Sliggoo.png/110px-Sliggoo.png" decoding="async" width="110" height="102" srcset="https://images.wikidexcdn.net/mwuploads/wikidex/thumb/d/d2/latest/20190423175607/Sliggoo.png/165px-Sliggoo.png 1.5x, https://images.wikidexcdn.net/mwuploads/wikidex/thumb/d/d2/latest/20190423175607/Sliggoo.png/220px-Sliggoo.png 2x" /></a><br /><a title="Sliggoo">Sliggoo</a>
+        </td>
+        <td>
+        </td>
+        <td class="flecha">Nivel 50 +<br /><a href="/wiki/Clima#Lluvia" title="Clima"><img alt="Tiempo atmosférico lluvia.png" src="https://images.wikidexcdn.net/mwuploads/wikidex/thumb/4/4f/latest/20221230175523/Tiempo_atmosf%C3%A9rico_lluvia.png/25px-Tiempo_atmosf%C3%A9rico_lluvia.png" decoding="async" width="25" height="25" srcset="https://images.wikidexcdn.net/mwuploads/wikidex/thumb/4/4f/latest/20221230175523/Tiempo_atmosf%C3%A9rico_lluvia.png/38px-Tiempo_atmosf%C3%A9rico_lluvia.png 1.5x, https://images.wikidexcdn.net/mwuploads/wikidex/thumb/4/4f/latest/20221230175523/Tiempo_atmosf%C3%A9rico_lluvia.png/50px-Tiempo_atmosf%C3%A9rico_lluvia.png 2x" /></a> <a title="Clima">lluvia</a> o <a href="/wiki/Clima#niebla" title="Clima"><img alt="Tiempo atmosférico niebla.png" src="https://images.wikidexcdn.net/mwuploads/wikidex/thumb/c/c6/latest/20221230175603/Tiempo_atmosf%C3%A9rico_niebla.png/25px-Tiempo_atmosf%C3%A9rico_niebla.png" decoding="async" width="25" height="25" srcset="https://images.wikidexcdn.net/mwuploads/wikidex/thumb/c/c6/latest/20221230175603/Tiempo_atmosf%C3%A9rico_niebla.png/38px-Tiempo_atmosf%C3%A9rico_niebla.png 1.5x, https://images.wikidexcdn.net/mwuploads/wikidex/thumb/c/c6/latest/20221230175603/Tiempo_atmosf%C3%A9rico_niebla.png/50px-Tiempo_atmosf%C3%A9rico_niebla.png 2x" /></a> <a title="Clima">niebla</a>
+        </td>
+        <td><a href="/wiki/Archivo:Goodra.png" class="image" title="Goodra"><img alt="Goodra" src="https://images.wikidexcdn.net/mwuploads/wikidex/thumb/b/bb/latest/20190423184254/Goodra.png/150px-Goodra.png" decoding="async" width="150" height="138" srcset="https://images.wikidexcdn.net/mwuploads/wikidex/thumb/b/bb/latest/20190423184254/Goodra.png/225px-Goodra.png 1.5x, https://images.wikidexcdn.net/mwuploads/wikidex/thumb/b/bb/latest/20190423184254/Goodra.png/300px-Goodra.png 2x" /></a><br /><a title="Goodra">Goodra</a>
+        </td></tr>
+        <tr>
+        <td class="flecha">Nivel 40<br />(en <a title="Hisui">Hisui</a>)
+        </td>
+        <td><a href="/wiki/Archivo:Sliggoo_de_Hisui.png" class="image" title="Sliggoo de Hisui"><img alt="Sliggoo de Hisui" src="https://images.wikidexcdn.net/mwuploads/wikidex/thumb/a/aa/latest/20220216070012/Sliggoo_de_Hisui.png/110px-Sliggoo_de_Hisui.png" decoding="async" width="110" height="102" srcset="https://images.wikidexcdn.net/mwuploads/wikidex/thumb/a/aa/latest/20220216070012/Sliggoo_de_Hisui.png/165px-Sliggoo_de_Hisui.png 1.5x, https://images.wikidexcdn.net/mwuploads/wikidex/thumb/a/aa/latest/20220216070012/Sliggoo_de_Hisui.png/220px-Sliggoo_de_Hisui.png 2x" /></a><br /><a title="Sliggoo de Hisui">Sliggoo de Hisui</a>
+        </td>
+        <td>
+        </td>
+        <td class="flecha">Nivel 50 +<br /><a href="/wiki/Clima#Lluvia" title="Clima"><img alt="Tiempo atmosférico lluvia.png" src="https://images.wikidexcdn.net/mwuploads/wikidex/thumb/4/4f/latest/20221230175523/Tiempo_atmosf%C3%A9rico_lluvia.png/25px-Tiempo_atmosf%C3%A9rico_lluvia.png" decoding="async" width="25" height="25" srcset="https://images.wikidexcdn.net/mwuploads/wikidex/thumb/4/4f/latest/20221230175523/Tiempo_atmosf%C3%A9rico_lluvia.png/38px-Tiempo_atmosf%C3%A9rico_lluvia.png 1.5x, https://images.wikidexcdn.net/mwuploads/wikidex/thumb/4/4f/latest/20221230175523/Tiempo_atmosf%C3%A9rico_lluvia.png/50px-Tiempo_atmosf%C3%A9rico_lluvia.png 2x" /></a> <a title="Clima">lluvia</a> o <a href="/wiki/Clima#niebla" title="Clima"><img alt="Tiempo atmosférico niebla.png" src="https://images.wikidexcdn.net/mwuploads/wikidex/thumb/c/c6/latest/20221230175603/Tiempo_atmosf%C3%A9rico_niebla.png/25px-Tiempo_atmosf%C3%A9rico_niebla.png" decoding="async" width="25" height="25" srcset="https://images.wikidexcdn.net/mwuploads/wikidex/thumb/c/c6/latest/20221230175603/Tiempo_atmosf%C3%A9rico_niebla.png/38px-Tiempo_atmosf%C3%A9rico_niebla.png 1.5x, https://images.wikidexcdn.net/mwuploads/wikidex/thumb/c/c6/latest/20221230175603/Tiempo_atmosf%C3%A9rico_niebla.png/50px-Tiempo_atmosf%C3%A9rico_niebla.png 2x" /></a> <a title="Clima">niebla</a>
+        </td>
+        <td><a href="/wiki/Archivo:Goodra_de_Hisui.png" class="image" title="Goodra de Hisui"><img alt="Goodra de Hisui" src="https://images.wikidexcdn.net/mwuploads/wikidex/thumb/4/44/latest/20220216070107/Goodra_de_Hisui.png/150px-Goodra_de_Hisui.png" decoding="async" width="150" height="139" srcset="https://images.wikidexcdn.net/mwuploads/wikidex/thumb/4/44/latest/20220216070107/Goodra_de_Hisui.png/225px-Goodra_de_Hisui.png 1.5x, https://images.wikidexcdn.net/mwuploads/wikidex/thumb/4/44/latest/20220216070107/Goodra_de_Hisui.png/300px-Goodra_de_Hisui.png 2x" /></a><br />Goodra de Hisui
+        </td></tr></tbody></table>
+</body>
+</html>
