@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .head{
+            border: 2px solid yellow;
+            background-color: grey;
+            color: blue;
+            float: inline-start;
+            height: 10%;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+        }
+        .cont{
+            border: 2px solid blue;
+            background-color: grey;
+            color: blue;
+            height: 90%;
+            float: left;
+        }
+        #sidebar{
+            width: 30%;
+        }
+        #content{
+            float: right;
+            width: 70%;
+        }
+        .submenu{
+            display: none;
+        }
+        li.opcion:hover .submenu{ 
+            display: block;
+            padding-left: 2em;
+            list-style-type: none;     
+        }
+        li{
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+<div id="header" class="head">Header</div>
+    <div id="sidebar" class="cont">
+    <ul>
+        <li class="opcion">Opcion 1
+            <ul class="submenu">
+                <li>Opcion 1-1</li>
+                <li>Opcion 1-2</li>
+                <li>Opcion 1-3</li>
+            </ul>
+        </li>
+        <li class="opcion">Opcion 2
+            <ul class="submenu">
+                <li>Opcion 2-1</li>
+                <li>Opcion 2-2</li>
+                <li>Opcion 2-3</li>
+            </ul>
+        </li>
+        <li class="opcion">Opcion 3
+            <ul class="submenu">
+                <li>Opcion 3-1</li>
+                <li>Opcion 3-2</li>
+                <li>Opcion 3-3</li>
+            </ul>
+        </li>
+    </ul>
+    </div>
+    <div id="content" class="cont">Content</div>
+</body>
+</html>
