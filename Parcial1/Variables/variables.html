@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body:has(input:checked){
+            background-color: var(--color-secundario);
+        }
+        :root {
+            --color-primario: gray;
+            --color-secundario: purple;
+        }
+
+        input:checked + div#contenedor{
+            background-color: var(--color-secundario);
+        }
+        div#contenedor{
+            background-color: var(--color-primario);
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;  
+            max-width:500px;
+            margin: 0 auto;
+        }
+
+        .parrafo{
+            color: white;
+            line-height: 1.5em;
+        }
+
+        #par{
+            font-size: 20px;
+        }
+        h1{
+            margin-top: 0;
+            color: blue;
+        }
+    </style>    
+</head>
+<body>
+    <label for="tema">Tema</label>
+    <input id="tema" type="checkbox">
+    <div id="contenedor">
+        <h1>¿Qué es una etiqueta HTML y cuáles son las más importantes?</h1>
+        <p id="par1" class="parrafo">Texto de ejemplo</p>
+    </div>
+</body>
+</html>
