@@ -1,0 +1,28 @@
+body:has(input:checked) {
+    background-color: purple;
+  }
+  input:checked + div#contenedor {
+    background-color: purple;
+  }
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  #par {
+    font-size: 20px;
+  }
+  div#contenedor {
+    background-color: gray;
+  }
+  div#contenedor h1 {
+    margin-top: 0;
+    color: blue;
+  }
+  div#contenedor h2 {
+    color: red;
+  }
+  div#contenedor .parrafo {
+    color: gray;
+    line-height: 1.5em;
+  }
