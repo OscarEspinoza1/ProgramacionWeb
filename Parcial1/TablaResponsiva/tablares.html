@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        table{
+            width: 100%;
+        }
+        table, thead, tbody, tr, th, td{
+            border: 1px solid blueviolet;
+            border-collapse: collapse;
+        }
+        tbody td:nth-child(even){
+                background-color: grey;
+            }
+
+        @media screen and (max-width:600px){
+            table, thead, tbody, tr, th, td{
+                display: block;
+            }
+            thead{
+                display:none;
+            }
+            td{
+                padding-left: 50%;
+            }
+            td:nth-child(1){
+           text-align: center;
+           padding-left: 0;
+           background-color: green;
+        }
+            td:nth-child(2)::before{
+                content: "Lunes";
+                position:absolute;
+                left: 10px;
+            }
+            td:nth-child(3)::before{
+                content: "Martes";
+                position:absolute;
+                left: 10px;
+            }
+            td:nth-child(4)::before{
+                content: "Miercoles";
+                position:absolute;
+                left: 10px;
+            }
+            td:nth-child(5)::before{
+                content: "Jueves";
+                position:absolute;
+                left: 10px;
+            }
+            td:nth-child(6)::before{
+                content: "Viernes";
+                position:absolute;
+                left: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+            <th>Hora</th>
+            <th>Lunes</th>
+            <th>Martes</th>
+            <th>Miercoles</th>
+            <th>Jueves</th>
+            <th>Viernes</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>7:00AM a 8:00AM</td>
+                <td>Programacion Web</td>
+                <td>Programacion Web</td>
+                <td>Programacion Web</td>
+                <td>Programacion Web</td>
+                <td>Programacion Web</td>
+            </tr>
+            <tr>
+                <td>8:00AM a 9:00AM</td>
+                <td>Arquitectura Computadoras</td>
+                <td>Sistemas Operativos</td>
+                <td>Arquitectura Computadoras</td>
+                <td>Sistemas Operativos</td>
+                <td>Arquitectura Computadoras</td>
+            </tr>
+            <tr>
+                <td>9:00AM a 10:00AM</td>
+                <td>Libre</td>
+                <td>Sistemas Operativos</td>
+                <td>Arquitectura Computadoras</td>
+                <td>Sistemas Operativos</td>
+                <td>Arquitectura Computadoras</td>
+            </tr>
+            <tr>
+                <td>10:00AM a 11:00AM</td>
+                <td>Libre</td>
+                <td>Libre</td>
+                <td>Libre</td>
+                <td>Libre</td>
+                <td>Libre</td>
+            </tr>
+            <tr>
+                <td>11:00AM a 12:00PM</td>
+                <td>Libre</td>
+                <td>Libre</td>
+                <td>Libre</td>
+                <td>Libre</td>
+                <td>Libre</td>
+            </tr>
+            <tr>
+                <td>12:00PM a 13:00PM</td>
+                <td>Libre</td>
+                <td>Telecomunicaciones</td>
+                <td>Libre</td>
+                <td>Telecomunicaciones</td>
+                <td>Libre</td>
+            </tr>
+            <tr>
+                <td>13:00PM a 14:00PM</td>
+                <td>Libre</td>
+                <td>Telecomunicaciones</td>
+                <td>Libre</td>
+                <td>Telecomunicaciones</td>
+                <td>Libre</td>
+            </tr>
+            <tr>
+                <td>14:00AM a 15:00PM</td>
+                <td>Ecuaciones Diferenciales</td>
+                <td>Ecuaciones Diferenciales</td>
+                <td>Ecuaciones Diferenciales</td>
+                <td>Ecuaciones Diferenciales</td>
+                <td>Ecuaciones Diferenciales</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
