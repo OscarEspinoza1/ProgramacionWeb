@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .head{
+            border: 2px solid yellow;
+            background-color: aqua;
+            color: blue;
+            float: inline-start;
+            height: 10%;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+        }
+        .cont{
+            border: 2px solid blue;
+            background-color: aqua;
+            color: blue;
+            height: 90%;
+            float: left;
+        }
+        #sidebar{
+            width: 30%;
+        }
+        #content{
+            float: right;
+            width: 70%;
+        }
+        h3{
+            text-align: center;
+        }
+       /* input#toggle{
+            display: none;
+        }*/
+
+        .sidebarEscondido{
+            display: none;
+        }
+        .contenidoAlCien{
+            width: 100% !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="head" id="header"><h3>Header</h3></div>
+    <div class="cont" id="sidebar"><h3>Sidebar</h3></div>
+    <div class="cont" id="content">
+       <!--<label for="toggle">Menu</label>-->
+       <button id="btn" type="button">ToggleMenu</button>
+        <h3>Content</h3>
+    </div>
+
+    <script>
+        document.getElementById("btn").addEventListener("click", function(){
+            console.log("Click en el boton");
+            document.getElementById("sidebar").classList.toggle("sidebarEscondido");
+            document.getElementById("content").classList.toggle("contenidoAlCien");
+        });
+    </script>
+</body>
+</html>
