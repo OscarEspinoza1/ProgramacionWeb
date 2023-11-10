@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peticion a GitHub</title>
+</head>
+<style>
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        background-color: gray;
+    }
+    .cont{
+        text-align: center;
+        background-color: white;
+        border-radius: 5px;
+    }
+</style>
+<body>
+    <h1>Lista de repositorio de GitHub</h1>
+    <div class="cont">
+        <ul id="resultado"></ul>
+    </div>
+    <script>
+        const url = 'https://api.github.com/repos/OscarEspinoza1/ProgramacionWeb';
+        const token = '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';
+        const resultadoElem = document.getElementById("resultado");
+
+        fetch(url,{
+            headers:{
+                Authorization: `Bearer ${token}`
+            }
+        })
+        .then(response=>response.json())
+        .then(data=>{
+            console.log(data);
+            const li = document.createElement("li");
+            li.textContent = data.name;
+            resultadoElem.appendChild(li);
+        });
+    </script>
+</body>
+</html>
