@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        background-color: gray;
+    }
+    .cont{
+        text-align: center;
+    }
+    button, select {
+        margin-bottom: 10px;
+    }
+    img{
+        height: 550px;
+        width: 550px;
+    }
+</style>
+<body>
+    <div>
+        <select id="razas"></select>
+        <button id="Peticion">Peticion</button>
+    </div>
+    <img src="" id="fotoperro"></div>
+    
+    <script>
+        window.onload = function(){
+        fetch("https://dog.ceo/api/breeds/list/all")
+        .then(respuesta=>respuesta.json())
+            .then(function(dato){
+                for (const property in dato.message) {
+                        console.log(dato.message)
+                        let option = document.createElement("option")
+                        option.value = property
+                        option.innerText = property
+                        document.getElementById("razas").appendChild(option)
+                }
+            });
+        }  
+        document.getElementById("Peticion").addEventListener("click", () => {
+            let option = document.getElementById("razas").value; 
+            fetch(`https://dog.ceo/api/breed/${option}/images/random`)    
+            .then(respuesta=>respuesta.json())
+            .then(function(dato){
+                document.getElementById("fotoperro").src = dato.message
+                console.log(dato.message)
+            }) 
+        });
+       
+    </script>
+</body>
+</html>

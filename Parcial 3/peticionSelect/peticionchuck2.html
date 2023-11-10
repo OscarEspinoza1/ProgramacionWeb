@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        background-color: gray;
+    }
+    .cont{
+        text-align: center;
+    }
+    button, select {
+        margin-bottom: 10px;
+    }
+    .chis{
+        margin-top: 20px;
+        border: 2px solid;
+        border-color: black;
+        padding: 5px;
+        font-size: 24px;
+    }
+</style>
+<body>
+    <div class="cont">
+        <select id="categorias"></select>
+        <button id="peticion">Peticion</button>
+    </div>
+    <div class="chis" id="chiste"></div>
+
+    <script>
+        window.onload = function () {
+            fetch("https://api.chucknorris.io/jokes/categories")
+                .then(respuesta => respuesta.json())
+                .then(function (dato) {
+                    dato.forEach(elemento => {
+                        console.log(elemento);
+                        let opc = document.createElement("option");
+                        opc.value = elemento;
+                        opc.innerText = elemento;
+                        document.getElementById("categorias").appendChild(opc);
+                    });
+                });
+
+                document.getElementById("peticion").addEventListener("click", function () {
+                const categoriaSeleccionada = document.getElementById("categorias").value;
+                fetch(`https://api.chucknorris.io/jokes/random?category=${categoriaSeleccionada}`)
+                 .then(respuesta => respuesta.json())
+                    .then(function (dato) {
+                     document.getElementById("chiste").innerText = dato.value;
+        });
+});
+        }
+    </script>
+</body>
+</html>
